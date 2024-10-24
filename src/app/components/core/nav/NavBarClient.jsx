@@ -22,7 +22,9 @@ const NavbarClient = ({ email }) => {
         </div>
 
         <Link
-          href={`mailto:${email}`}
+          href={`https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=Job%20Opportunity&body=Hi%20Shoaib,%20I%20would%20like%20to%20discuss%20a%20job%20opportunity%20with%20you.`}
+          target="_blank" // Opens in a new tab
+          rel="noopener noreferrer" // Security best practice
           className="text-secondary text-xl mt-5 hover:text-blue-950 transition-colors"
         >
           {email}
@@ -40,7 +42,7 @@ const NavbarClient = ({ email }) => {
             My CV
           </Link>
           <Link
-            href={"/"}
+            href={"/#WantTo"}
             className="bg-primary text-secondary px-4 py-2 rounded-lg transition-colors hover:bg-blue-950 hover:text-primary"
             aria-label="Hire me" // Accessible name for link
           >

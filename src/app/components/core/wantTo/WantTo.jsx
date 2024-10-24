@@ -1,6 +1,10 @@
+import Link from "next/link";
+
 const Wantto = () => {
+  const email = "shoaib.newversion@gmail.com"; // Define your email here
+
   return (
-    <section className="w-full py-10 bg-gray-100">
+    <section id="WantTo" className="w-full py-10 bg-gray-100">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8">Want to</h2>
 
@@ -53,6 +57,18 @@ const Wantto = () => {
               </p>
             </div>
           </div>
+        </div>
+
+        {/* Centered Button */}
+        <div className="flex justify-center mt-8">
+          <a
+            href={`https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=Job%20Opportunity&body=Hi%20Shoaib,%20I%20would%20like%20to%20discuss%20a%20job%20opportunity%20with%20you.`}
+            target="_blank" // Opens in a new tab
+            rel="noopener noreferrer" // Security best practice
+            className="bg-black text-white font-semibold py-4 px-8 rounded-lg transform transition-all duration-300 hover:bg-secondary  hover:scale-105 hover:shadow-lg hover:-translate-y-1"
+          >
+            Hire Me!
+          </a>
         </div>
       </div>
     </section>

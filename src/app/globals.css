@@ -155,3 +155,7 @@ section {
     font-size: 2rem;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
